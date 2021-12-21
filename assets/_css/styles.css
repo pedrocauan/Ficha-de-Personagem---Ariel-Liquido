@@ -1,80 +1,199 @@
-:root{
-    --green: 120;/*Principal, é a saturação do verde*/
-    --white: hsl(0,0%,100%) /*Branco para navbar*/;
-    --black: hsl(0, 0%, 0%); /*Preto intenso para navbar*/
-    --light-dark: hsl(0, 0%, 9%); /*Background*/
-    --light-gray: hsl(0,0%, 91%); /*Branco mais escurinho pros textos*/
-    --light-green: hsl(var(--green), 80%, 53%); /*Verde claro pro titulo*/
-    --title-green: hsl(var(--green), 69%, 53%); /*Para os titulos*/
-    --dark-green: hsl(var(--green), 58%, 42%); /*para background*/
+:root {
+  --green: 120; /*Principal, é a saturação do verde*/
+  --yellow: 60;
+  --white: hsl(0, 0%, 100%) /*Branco para navbar*/;
+  --black: hsl(0, 0%, 0%); /*Preto intenso para navbar*/
+  --light-dark: hsl(0, 0%, 7%); /*Background*/
+  --light-gray: hsl(0, 0%, 91%); /*Branco mais escurinho pros textos*/
+  --light-green: hsl(var(--yellow), 80%, 53%); /*Verde claro pro titulo*/
+  --title-green: hsl(var(--yellow), 69%, 53%); /*Para os titulos*/
+  --dark-green: hsl(var(--yellow), 58%, 42%); /*para background*/
+  --dark-dark-green: hsl(var(--yellow), 100%, 50%); /*para background*/
 
+  --novo-green: hsl(var(--green), 100%, 25%);
 }
 /*=========== FONTES ============*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@300;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@300;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Hentaigana+Akari&display=swap');
 /*font-family: 'Open Sans', sans-serif; -> OPEN-SANS*/
 /*font-family: 'Poppins', sans-serif; -> POPPINS*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .teste {
-    min-height: 100vh;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 /*======== CORES ======== */
 /*background verde*/
 .green-bg {
-    background-color: var(--dark-green);
+  background-color: var(--dark-green);
 }
 /*background preto*/
-.black-bg 
-{
-    background-color: var(--light-dark);
+.black-bg {
+  background-color: var(--light-dark);
 }
 /*cor do texto*/
 .text-white {
-    color:var(--light-gray);
+  color: var(--light-gray);
 }
 
 /*=============== MENU =================== */
-.menu .navbar{
-    background-color: var(--black);
+.menu .navbar {
+  background-color: var(--black);
 }
 
-.menu .navbar a, .menu .navbar h1{
-    color: var(--white);
+.menu .navbar a,
+.menu .navbar h1 {
+  color: var(--white);
 }
 
-#navbarBasicExample, .menu .navbar .menu-item {
-    background-color: hsl(0, 0%, 2.5%);
+#navbarBasicExample,
+.menu .navbar .menu-item {
+  background-color: hsl(0, 0%, 2.5%);
 }
 
 .menu .navbar .menu-item:hover {
-    color: var(--title-green);
-    background:hsl(0, 0%, 4%);
-    position: relative;
-    transition: all 300ms ease-in-out;
+  color: var(--title-green);
+  background: hsl(0, 0%, 4%);
+  position: relative;
+  transition: all 300ms ease-in-out;
 }
 .is-active {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .menu .navbar span {
-    color: var(--title-green);
+  color: var(--title-green);
 }
 
+/*============= APRESENTAÇÃO COM FOTO DA PERSONAGEM =============== */
 
+/*Muda a cor do card*/
+.card .card-content {
+  background: var(--black);
+}
 
+.card .card-content h1 {
+  color: var(--title-green);
+  text-align: center;
+}
+
+.card .card-content .tag {
+  background: var(--dark-dark-green);
+  color: var(--black);
+  font-weight: 700;
+}
+
+/*Historia/personalidade*/
+
+h2 {
+  color: var(--black);
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.message {
+  background-color: var(--light-dark) !important;
+}
+
+.message .message-header {
+  background-color: var(--dark-dark-green);
+}
+
+.message .message-body {
+  border-style: dashed;
+  border-color: var(--dark-dark-green);
+  border-width: 8px !important;
+}
+
+.message h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.message p {
+  color: var(--light-gray);
+  font-size: 20px;
+}
+
+.espaco {
+  margin-bottom: 70px;
+}
+
+.separar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.separar span {
+  display: block;
+  margin: 1%;
+}
+
+.verde {
+  background-color: var(--novo-green) !important;
+}
+
+.message-header.verde + .message-body {
+  border-style: dashed;
+  border-color: var(--novo-green);
+  border-width: 8px !important;
+}
+
+.separar.atributos .tag {
+  background-color: var(--dark-green);
+  color: var(--black);
+}
+
+.vermelho {
+  background-color: darkorchid !important;
+}
+
+.verdebebe {
+  background-color: seagreen !important;
+}
+
+.azul {
+  background-color: rgb(25, 36, 182) !important;
+}
+
+.rosa {
+  background-color: crimson !important;
+}
+
+.marrom {
+  background-color: rgb(129, 69, 1) !important;
+}
+
+.white {
+  background-color: rgb(148, 147, 147) !important;
+}
+
+.blackgreen {
+  background-color: rgb(4, 41, 4) !important;
+}
