@@ -1,0 +1,80 @@
+:root{
+    --green: 120;/*Principal, é a saturação do verde*/
+    --white: hsl(0,0%,100%) /*Branco para navbar*/;
+    --black: hsl(0, 0%, 0%); /*Preto intenso para navbar*/
+    --light-dark: hsl(0, 0%, 9%); /*Background*/
+    --light-gray: hsl(0,0%, 91%); /*Branco mais escurinho pros textos*/
+    --light-green: hsl(var(--green), 80%, 53%); /*Verde claro pro titulo*/
+    --title-green: hsl(var(--green), 69%, 53%); /*Para os titulos*/
+    --dark-green: hsl(var(--green), 58%, 42%); /*para background*/
+
+}
+/*=========== FONTES ============*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Poppins:wght@300;500;700;900&display=swap');
+/*font-family: 'Open Sans', sans-serif; -> OPEN-SANS*/
+/*font-family: 'Poppins', sans-serif; -> POPPINS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.teste {
+    min-height: 100vh;
+}
+
+/*======== CORES ======== */
+/*background verde*/
+.green-bg {
+    background-color: var(--dark-green);
+}
+/*background preto*/
+.black-bg 
+{
+    background-color: var(--light-dark);
+}
+/*cor do texto*/
+.text-white {
+    color:var(--light-gray);
+}
+
+/*=============== MENU =================== */
+.menu .navbar{
+    background-color: var(--black);
+}
+
+.menu .navbar a, .menu .navbar h1{
+    color: var(--white);
+}
+
+#navbarBasicExample, .menu .navbar .menu-item {
+    background-color: hsl(0, 0%, 2.5%);
+}
+
+.menu .navbar .menu-item:hover {
+    color: var(--title-green);
+    background:hsl(0, 0%, 4%);
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+.is-active {
+    background-color: var(--black);
+}
+
+.menu .navbar span {
+    color: var(--title-green);
+}
+
+
+
