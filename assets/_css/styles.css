@@ -1,6 +1,6 @@
 :root {
   --green: 120; /*Principal, é a saturação do verde*/
-  --yellow: 60;
+  --yellow: 325;
   --white: hsl(0, 0%, 100%) /*Branco para navbar*/;
   --black: hsl(0, 0%, 0%); /*Preto intenso para navbar*/
   --light-dark: hsl(0, 0%, 7%); /*Background*/
@@ -99,7 +99,7 @@ h3 {
 .card .card-content h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  color: var(--title-green);
+  color: var(--dark-dark-green);
   text-align: center;
 }
 
