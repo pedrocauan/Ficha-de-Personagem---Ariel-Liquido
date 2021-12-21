@@ -201,7 +201,7 @@ h2 {
 }
 
 .light {
-  background-color: hsl(0, 0%, 10%) !important;
+  background-color: hsl(0, 0%, 12%) !important;
   color: var(--light-gray) !important;
 }
 
