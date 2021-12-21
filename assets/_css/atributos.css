@@ -1,6 +1,6 @@
 :root {
   --green: 120; /*Principal, é a saturação do verde*/
-  --yellow: 60;
+  --yellow: 325;
   --white: hsl(0, 0%, 100%) /*Branco para navbar*/;
   --black: hsl(0, 0%, 0%); /*Preto intenso para navbar*/
   --light-dark: hsl(0, 0%, 7%); /*Background*/
@@ -99,7 +99,7 @@ h3 {
 .card .card-content h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  color: var(--title-green);
+  color: var(--novo-green);
   text-align: center;
 }
 
@@ -200,6 +200,11 @@ h2 {
   background-color: rgb(4, 41, 4) !important;
 }
 
+.light {
+  background-color: hsl(0, 0%, 10%) !important;
+  color: var(--light-gray) !important;
+}
+
 .navbar-menu .navbar-item {
   color: var(--title-green);
   font-family: 'Poppins', sans-serif;
@@ -212,4 +217,16 @@ h2 {
 .navbar-menu .navbar-item:hover {
   color: var(--black);
   background-color: var(--title-green);
+}
+
+.traco {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.traco h3 {
+  color: var(--novo-green);
 }
